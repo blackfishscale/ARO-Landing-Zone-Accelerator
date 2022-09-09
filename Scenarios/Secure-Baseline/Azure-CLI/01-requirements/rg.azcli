@@ -1,7 +1,7 @@
 # Important: Tested these scripts only through WSL Terminal. Git Bash doesn't work.
 
 #!/usr/bin/env bash
-SUBSCRIPTIONID='xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
+SUBSCRIPTIONID='180cb695-473a-4a4e-ab9a-f3044c0039c4'
 HUBRGNAME='hub-aro-rg'
 SPOKERGNAME='spoke-aro-rg'
 ARCRGNAME='arc-aro-rg'
@@ -17,8 +17,10 @@ KV_NAME='keyvault'$uniqueId
 LAWORKSPACE_NAME='arolw'
 AFD_NAME='aroafd'
 AFD_PLS_NAME='aro-pls'
-AFD_APP_CUSTOM_DOMAIN_NAME='ratingsapp-<domain>-<name>' # Ex: ratingsapp-mydomain-com
-ARO_APP_FQDN='ratingsapp.<domain>.<name>' # Ex: ratingsapp.mydomain.com
+#AFD_APP_CUSTOM_DOMAIN_NAME='ratingsapp-<domain>-<name>' # Ex: ratingsapp-mydomain-com
+#ARO_APP_FQDN='ratingsapp.<domain>.<name>' # Ex: ratingsapp.mydomain.com
+AFD_APP_CUSTOM_DOMAIN_NAME='ratingsapp-hitarusa-com' # Ex: ratingsapp-mydomain-com
+ARO_APP_FQDN='ratingsapp.hitarusa.com' # Ex: ratingsapp.mydomain.com
 ARO_AAD_APP_NAME='aro-aad-auth-sp-'$uniqueId
 
 # VNet Name and IP Addresses
